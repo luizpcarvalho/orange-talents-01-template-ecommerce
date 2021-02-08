@@ -38,4 +38,13 @@ public class Caracteristicas {
     public String getValor() {
         return valor;
     }
+
+    @Override
+    public String toString() {
+        return "Caracteristicas{" +
+                "id=" + id +
+                ", nome='" + nome + '\'' +
+                ", valor='" + valor + '\'' +
+                '}';
+    }
 }

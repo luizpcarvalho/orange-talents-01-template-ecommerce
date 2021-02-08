@@ -32,4 +32,12 @@ public class ImagemProduto {
     public String getLink() {
         return link;
     }
+
+    @Override
+    public String toString() {
+        return "ImagemProduto{" +
+                "id=" + id +
+                ", link='" + link + '\'' +
+                '}';
+    }
 }

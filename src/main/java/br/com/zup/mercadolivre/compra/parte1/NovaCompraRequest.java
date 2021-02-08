@@ -1,5 +1,6 @@
-package br.com.zup.mercadolivre.compra;
+package br.com.zup.mercadolivre.compra.parte1;
 
+import br.com.zup.mercadolivre.compra.Compra;
 import br.com.zup.mercadolivre.config.validacao.ExistId;
 import br.com.zup.mercadolivre.produto.Produto;
 import br.com.zup.mercadolivre.usuario.Usuario;

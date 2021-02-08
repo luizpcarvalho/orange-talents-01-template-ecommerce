@@ -1,5 +1,6 @@
-package br.com.zup.mercadolivre.compra;
+package br.com.zup.mercadolivre.compra.parte1;
 
+import br.com.zup.mercadolivre.compra.Compra;
 import br.com.zup.mercadolivre.email.Emails;
 import br.com.zup.mercadolivre.produto.Produto;
 import br.com.zup.mercadolivre.usuario.Usuario;
@@ -31,7 +32,7 @@ public class CompraParte1Controller {
     @PostMapping
     @Transactional
     public ResponseEntity<?> cria(@RequestBody @Valid NovaCompraRequest request, @AuthenticationPrincipal Usuario usuario,
-                                    UriComponentsBuilder uriComponentsBuilder) throws BindException {
+                                  UriComponentsBuilder uriComponentsBuilder) throws BindException {
         Produto produto = entityManager.find(Produto.class, request.getIdProduto());
         boolean abateu = produto.abateEstoque(request.getQuantidade());
         if(abateu) {

@@ -54,4 +54,15 @@ public class PerguntaProduto {
     public Produto getProduto() {
         return produto;
     }
+
+    @Override
+    public String toString() {
+        return "PerguntaProduto{" +
+                "id=" + id +
+                ", titulo='" + titulo + '\'' +
+                ", descricao='" + descricao + '\'' +
+                ", instanteCriacao=" + instanteCriacao +
+                ", usuario=" + usuario +
+                '}';
+    }
 }

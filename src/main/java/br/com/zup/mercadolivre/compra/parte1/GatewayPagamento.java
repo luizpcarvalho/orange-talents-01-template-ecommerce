@@ -1,5 +1,6 @@
-package br.com.zup.mercadolivre.compra;
+package br.com.zup.mercadolivre.compra.parte1;
 
+import br.com.zup.mercadolivre.compra.Compra;
 import org.springframework.web.util.UriComponentsBuilder;
 
 public enum GatewayPagamento {

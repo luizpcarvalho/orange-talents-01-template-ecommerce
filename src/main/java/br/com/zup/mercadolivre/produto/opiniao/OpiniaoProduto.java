@@ -49,4 +49,15 @@ public class OpiniaoProduto {
     public Usuario getUsuario() {
         return usuario;
     }
+
+    @Override
+    public String toString() {
+        return "OpiniaoProduto{" +
+                "id=" + id +
+                ", nota=" + nota +
+                ", titulo='" + titulo + '\'' +
+                ", descricao='" + descricao + '\'' +
+                ", usuario=" + usuario +
+                '}';
+    }
 }
